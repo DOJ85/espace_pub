@@ -26,6 +26,7 @@ header {
   min-width: 100%;
   box-shadow: 0 0 15px #000;
   border: 1px solid #000;
+  transition:
 }
 
 nav ul {
