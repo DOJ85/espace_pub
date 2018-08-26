@@ -10,17 +10,20 @@ html {
 body {
   height: 100%;
   background-color: #ccc;
-  font-family: "Roboto", sans-serif;
-  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 
-.container {
+.headerContainer {
   margin: 0 auto;
   width: 80%;
 }
 
 header {
-  background-color: #232323;
+  background: #232323;
+  background: -webkit-linear-gradient(to right, #1e1e1e, #424242);
+  background: linear-gradient(to right, #1e1e1e, #424242);
+
   height: 67px;
   text-align: center;
   min-width: 100%;
@@ -37,7 +40,7 @@ nav ul {
 
 nav li {
   margin-top: 20px;
-  font-size: 21px;
+  font-size: 19px;
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -48,7 +51,7 @@ nav a {
   color: #fff;
   padding: 6px 30px;
   transition: .7s;
-  transition-property: color, background-color;
+  transition-property: color, background-color, border;
 }
 
 nav a:hover {
@@ -56,11 +59,11 @@ nav a:hover {
   border: 1px solid #232323;
   background-color: #ccc;
   transition:  .7s;
-  transition-property: color, background-color;
+  transition-property: color, background-color, border;
 }
 
 
-@media screen and (max-width: 1351px) {
+@media screen and (max-width: 1375px) {
   nav li {
     font-size: 12px;
     margin-right: 0px;
@@ -72,7 +75,7 @@ nav a:hover {
   }
 }
 
-@media screen and (max-width: 1035px) {
+@media screen and (max-width: 1020px) {
   nav li {
     font-size: 12px;
     margin-right: 5px;
@@ -102,10 +105,72 @@ nav a:hover {
 
 
 .background {
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   background-image: url("images/bg1.jpg");
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 0%;
+  -webkit-mask-image: linear-gradient(to top, transparent 0%, black 26%);
+  mask-image: linear-gradient(to top, transparent 0%, black 26%);
+}
+
+
+.logoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin-top: -3%;
+}
+
+.logo {
+  color: #fff;
+  box-shadow: 0 0 25px #000;
+  background-color: rgba(255, 255, 255, .4);
+  font-weight: lighter;
+  text-shadow: 0 0 7px black;
+  letter-spacing: 20px;
+}
+
+.logo p {
+  font-size: 5vw;
+  border: 2px solid #fff;
+  /* padding: 50px 70px; */
+
+  padding: 1em;
+  white-space: nowrap;
+}
+
+.info p{
+  color: #fff;
+  font-size: 2vw;
+  padding-top: 20px;
+  text-shadow: 0 0 15px black, 0 0 15px black;
+}
+
+.sectionTitle {
+  font-size: 40px;
+  margin: 50px;
+  position: relative;
+  display: inline-block;
+}
+
+.sectionTitle::after {
+  content: "";
+  height: 3px;
+  width: 110px;
+  position: absolute;
+  left: calc(50% - 20%);
+  bottom: -10px;
+  background-color: #e9a401;
+}
+
+.container {
+  margin-top: 50px;
+  text-align: center;
+  margin: 0 10%;
 }
