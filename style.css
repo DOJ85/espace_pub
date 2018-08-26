@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-color: #ccc;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+header {
+  background-color: #232323;
+  height: 67px;
+  text-align: center;
+  min-width: 100%;
+  box-shadow: 0 0 15px #000;
+  border: 1px solid #000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap
+}
+
+nav li {
+  margin-top: 20px;
+  font-size: 21px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 6px 30px;
+  transition: width .7s;
+}
+
+nav a:hover {
+  color: #232323;
+  border: 1px solid #232323;
+  background-color: #ccc;
+  transition: width .7s;
+}
+
+
+@media screen and (max-width: 1351px) {
+  nav li {
+    font-size: 12px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  header {
+    height: 55px;
+  }
+}
+
+@media screen and (max-width: 1035px) {
+  nav li {
+    font-size: 12px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  header {
+    height: 85px;
+  }
+
+  .container {
+    width: 46%;
+  }
+}
+
+@media screen and (max-width: 847px) {
+  nav li {
+    font-size: 12px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  header {
+    height: 55px;
+  }
+}
+
+
+.background {
+  height: 90vh;
+  width: 100%;
+  background-image: url("images/bg1.jpg");
+  background-repeat: no-repeat;
+  background-position: 0% 70%;
+  background-size: cover;
+}
