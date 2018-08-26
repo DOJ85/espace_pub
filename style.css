@@ -26,7 +26,6 @@ header {
   min-width: 100%;
   box-shadow: 0 0 15px #000;
   border: 1px solid #000;
-  transition:
 }
 
 nav ul {
@@ -49,13 +48,15 @@ nav a {
   color: #fff;
   padding: 6px 30px;
   transition: .7s;
+  transition-property: color, background-color;
 }
 
 nav a:hover {
   color: #232323;
   border: 1px solid #232323;
   background-color: #ccc;
-  transition: .7s;
+  transition:  .7s;
+  transition-property: color, background-color;
 }
 
 
@@ -106,4 +107,5 @@ nav a:hover {
   background-image: url("images/bg1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 50% 0%;
 }
